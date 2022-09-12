@@ -46,7 +46,7 @@ Users should be able to:
 
 Import fonts from [Google Fonts](https://fonts.google.com/)
 I learned how to use HTML Semantic Elements and position them using FLEX.
-Study the <details> tag.
+Study the 'details' tag.
 I used Pixel Perfect.
 
 To see how you can add code snippets, see below:
