@@ -1,0 +1,72 @@
+@media (min-width: 376px) {
+
+  body {
+    padding-left: 40px;
+  }
+
+  .faq__mobile-log {
+    display: none;
+  }
+
+  .faq__desktop-log {
+    display: block;
+  }
+
+  .faq {
+    min-width: 920px;
+    min-height: 510px;
+    margin-top: 130px;
+    padding-left: 49%;
+    padding-right: 108px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .faq__img-logo {
+    position: absolute;
+    width: 465px;
+    height: 360px;
+    top: 69px;
+    left: -78px;
+    z-index: 3;
+  }
+
+  .logo-box {
+    display: block;
+    position: relative;
+  }
+
+  .faq__img-box {
+    display: block;
+    position: absolute;
+    top: 335px;
+    left: -92px;
+    z-index: 10;
+  }
+
+  .faq__img-shadow {
+    position: absolute;
+    width: 480px;
+    height: 525px;
+    top: 0px;
+    left: -90px;
+    z-index: 2;
+  }
+
+  .container {
+    min-width: 335px;
+    padding-bottom: 25px;
+  }
+
+  .title {
+    font-size: 31px;
+    text-align: left;
+    padding-top: 63px;
+    margin-bottom: 35px;
+  }
+
+  summary {
+    font-size: 14px;
+  }
+
+}

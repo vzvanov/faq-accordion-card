@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.pixel-perfect-image {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  z-index: 100;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+
+  /* Font */
+  --ff: 'Kumbh Sans', sans-serif;
+  --fs: 12px;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Colors */
+  /* Primary */
+  /* Text */
+  --color-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --color-soft-red: hsl(14, 88%, 65%);
+
+  /* Gradient Background gradient */
+  --color-soft-violet: hsl(273, 75%, 66%);
+  --color-soft-blue: hsl(240, 73%, 65%);
+
+  /* Neutral */
+  /* Text */
+  --color-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --color-dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* Dividers */
+  --color-light-grayish-blue: hsl(240, 5%, 91%);
+
+  /* Layout */
+  --mobile: 375px;
+  --desktop: 1440px;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs);
+  background: var(--color-soft-violet);
+  background: linear-gradient(to bottom, var(--color-soft-violet) 0%, var(--color-soft-blue) 100%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.faq {
+  position: relative;
+  min-width: 328px;
+  background: white;
+  margin-top: 148px;
+  border-radius: 20px;
+}
+
+.faq__desktop-log {
+  display: none;
+}
+
+.logo-box {
+  display: none;
+}
+
+.faq__img-logo {
+  position: absolute;
+  width: 241px;
+  height: 241px;
+  top: -140px;
+  left: 43px;
+}
+
+.faq__img-shadow {
+  position: absolute;
+  width: 241px;
+  height: 100px;
+  top: 4px;
+  left: 43px;
+}
+
+.container {
+  max-width: 277px;
+  margin-left: 27px;
+  padding-bottom: 25px;
+}
+
+.title {
+  font-size: 31px;
+  text-align: center;
+  padding-top: 131px;
+  margin-bottom: 33px;
+}
+
+details {
+  margin-bottom: 17px;
+  border-bottom: 1px solid var(--color-light-grayish-blue);
+  cursor: pointer;
+}
+
+details:last-child {
+  margin-bottom: 0;
+}
+
+details p {
+  padding-bottom: 17px;
+}
+
+details:hover {
+  color: var(--color-soft-red);
+}
+
+summary {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  list-style: none;
+}
+
+details[open] summary {
+  font-weight: var(--fw-bold);
+  color: var(--color-very-dark-desaturated-blue);
+}
+
+details[open] img {
+  transform: rotateX(180deg);
+}
+
+details[open] p {
+  color: var(--color-dark-grayish-blue);
+}
+
+footer {
+  padding-bottom: 10px;
+}
